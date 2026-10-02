@@ -98,12 +98,12 @@
     <nav class="secondary-nav" id="secondary-nav" aria-label="Main Navigation">
       <div class="container nav-links-container">
         <ul class="nav-links">
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#categories-section">Photo Categories</a></li>
-          <li><a href="#bestsellers-section">Most Sold</a></li>
-          <li><a href="#catalog-section">All Products Catalog</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="categories.html">Photo Categories</a></li>
+          <li><a href="products.html?sort=bestseller">Most Sold</a></li>
+          <li><a href="products.html">All Products Catalog</a></li>
           <li><a href="#wholesale-info-section">Wholesale B2B Supply</a></li>
-          <li><a href="#materials-guide-section">Raw Mouldings & Glass</a></li>
+          <li><a href="products.html?category=mouldings">Raw Mouldings & Glass</a></li>
         </ul>
         <div class="wholesale-perk-hint">
           <span class="icon">📦</span>
@@ -131,7 +131,7 @@
             Choose from sacred 24K gold foil deities, royal bridal canvases, corporate award frames, or raw moulding sticks in bulk.
           </p>
           <div class="hero-actions">
-            <a href="#catalog-section" class="btn btn-primary">Browse All Products</a>
+            <a href="products.html" class="btn btn-primary">Browse All Products</a>
             <button id="hero-rfq-btn" class="btn btn-gold">Wholesale Dealership / Bulk Inquiry</button>
           </div>
           
@@ -222,7 +222,7 @@
             </p>
           </div>
           <div class="header-right">
-            <button class="btn btn-outline" id="view-all-cats-btn">View All 20+ Items</button>
+            <a href="categories.html" class="btn btn-outline" id="view-all-cats-btn">Explore All 7 Categories Directory &rarr;</a>
           </div>
         </div>
 
@@ -303,8 +303,13 @@
           <!-- Sidebar Filters -->
           <aside class="catalog-sidebar" id="catalog-sidebar">
             <div class="sidebar-header">
-              <h3>Filters & Search</h3>
-              <button id="reset-filters-btn" class="reset-link">Reset All</button>
+              <h3>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                </svg>
+                Filter Catalog
+              </h3>
+              <button id="reset-filters-btn" class="reset-link" title="Reset all applied filters">Reset All</button>
             </div>
 
             <!-- Audience Filter -->
@@ -346,12 +351,16 @@
 
             <!-- Price Range Filter in INR -->
             <div class="filter-group">
-              <h4 class="filter-heading">Price Range (<span id="price-mode-indicator">₹</span>)</h4>
+              <div class="filter-title-row">
+                <h4 class="filter-heading">Max Price</h4>
+                <span class="price-val" id="current-price-val">Up to ₹6,000</span>
+              </div>
               <div class="price-slider-wrap">
-                <input type="range" id="price-range-slider" min="100" max="6000" step="100" value="6000">
+                <input type="range" id="price-range-slider" min="60" max="6000" step="50" value="6000">
                 <div class="price-range-labels">
-                  <span>₹100</span>
-                  <span id="current-price-val">Up to ₹6,000</span>
+                  <span>₹60</span>
+                  <span id="price-mode-indicator">Retail MRP</span>
+                  <span>₹6,000+</span>
                 </div>
               </div>
             </div>
@@ -632,13 +641,14 @@
       <div class="footer-col">
         <h4>Framing Categories</h4>
         <ul>
-          <li><a href="#catalog-section" onclick="filterByCategory('hindu-gods')">Hindu Gods' Pooja Frames</a></li>
-          <li><a href="#catalog-section" onclick="filterByCategory('wedding-marriage')">Marriage & Couple Wedding Frames</a></li>
-          <li><a href="#catalog-section" onclick="filterByCategory('corporate-framing')">Corporate & Degree Frames</a></li>
-          <li><a href="#catalog-section" onclick="filterByCategory('bulk-retail-cartons')">Retailer Bulk Cartons (8x10, 6x8)</a></li>
-          <li><a href="#catalog-section" onclick="filterByCategory('family-personal')">Family & Milestone Collages</a></li>
-          <li><a href="#catalog-section" onclick="filterByCategory('mouldings')">Synthetic PS Gold Mouldings</a></li>
-          <li><a href="#catalog-section" onclick="filterByCategory('framing-materials')">Workshop Glass & Hardware</a></li>
+          <li><a href="products.html?category=hindu-gods">Hindu Gods' Pooja Frames</a></li>
+          <li><a href="products.html?category=wedding-marriage">Marriage & Couple Wedding Frames</a></li>
+          <li><a href="products.html?category=corporate-framing">Corporate & Degree Frames</a></li>
+          <li><a href="products.html?category=bulk-retail-cartons">Retailer Bulk Cartons (8x10, 6x8)</a></li>
+          <li><a href="products.html?category=family-personal">Family & Milestone Collages</a></li>
+          <li><a href="products.html?category=mouldings">Synthetic PS Gold Mouldings</a></li>
+          <li><a href="products.html?category=framing-materials">Workshop Glass & Hardware</a></li>
+          <li><a href="categories.html" style="color: var(--accent-gold); font-weight: 600;">Explore All Categories &rarr;</a></li>
         </ul>
       </div>
 
@@ -648,8 +658,8 @@
           <li><a href="#wholesale-info-section">Wholesale Partnership</a></li>
           <li><a href="#mode-explainer" id="footer-toggle-wholesale">Toggle Wholesale / Retail Mode</a></li>
           <li><a href="#rfq-modal" class="open-rfq-link">Request Factory Price List</a></li>
-          <li><a href="#catalog-section" onclick="filterByAudience('wholesale')">Volume Carton Catalog</a></li>
-          <li><a href="#materials-guide-section">Moulding Bundle Distributor</a></li>
+          <li><a href="products.html?audience=wholesale">Volume Carton Catalog</a></li>
+          <li><a href="products.html?category=mouldings">Moulding Bundle Distributor</a></li>
           <li><a href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp Direct Order Desk</a></li>
         </ul>
       </div>

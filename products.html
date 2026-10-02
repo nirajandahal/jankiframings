@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Framing Catalog & Wholesale Pricing | Janki Framings</title>
+  <meta name="description" content="Browse handcrafted frames at Janki Framings: Hindu God pooja frames, wedding portraits, certificates, bulk cartons, raw mouldings, and workshop hardware with instant WhatsApp quotes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Store Announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-text">
+        <span class="badge-pill teal">B2B & Retail</span>
+        <span>Factory Direct Framing Works • Specializing in <strong>Hindu God Pooja Frames</strong>, Wedding & Corporate Orders • Pan-India Transport</span>
+      </div>
+      <div class="announcement-actions">
+        <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-link" rel="noopener">
+          <span>💬 WhatsApp Wholesale: +91 98765 43210</span>
+        </a>
+        <button id="open-rfq-top-btn" class="text-link">Request Bulk Price List</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-content">
+      <!-- Logo & Brand: Janki Framings -->
+      <a href="index.html" class="brand-logo" aria-label="Janki Framings Home">
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <rect x="7" y="7" width="10" height="10" rx="1" ry="1"></rect>
+            <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Janki <span>Framings</span></span>
+          <span class="brand-tagline">Devotional • Wedding • Corporate • Wholesale</span>
+        </div>
+      </a>
+
+      <!-- Search Input in Header -->
+      <div class="search-wrapper">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input 
+          type="search" 
+          id="global-search" 
+          placeholder="Search God frames, wedding portraits, certificates, mouldings..." 
+          aria-label="Search catalog"
+        />
+        <button type="button" id="clear-search-btn" class="clear-search hidden" aria-label="Clear search">&times;</button>
+      </div>
+
+      <!-- Customer Mode Selector (Retail vs Wholesale Switcher) -->
+      <div class="mode-switcher-container">
+        <label class="mode-label" for="wholesale-toggle">
+          <span class="mode-title">Mode:</span>
+          <div class="toggle-control">
+            <span class="mode-opt active" id="opt-retail">Retail</span>
+            <div class="switch">
+              <input type="checkbox" id="wholesale-toggle" aria-label="Toggle Wholesale Mode">
+              <span class="slider round"></span>
+            </div>
+            <span class="mode-opt" id="opt-wholesale">Wholesale / B2B</span>
+          </div>
+        </label>
+      </div>
+
+      <!-- Action items: Quote Drawer / Cart -->
+      <div class="header-actions">
+        <button id="cart-drawer-toggle" class="btn-icon-count" aria-label="View Order or Quote List">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="count-badge" id="cart-item-count">0</span>
+          <span class="action-label" id="cart-label">Order / Quote</span>
+        </button>
+
+        <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Open mobile navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Secondary Navigation Links Bar -->
+    <nav class="secondary-nav" id="secondary-nav" aria-label="Main Navigation">
+      <div class="container nav-links-container">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Photo Categories</a></li>
+          <li><a href="products.html?sort=bestseller">Most Sold</a></li>
+          <li><a href="products.html" class="active">All Products Catalog</a></li>
+          <li><a href="index.html#wholesale-info-section">Wholesale B2B Supply</a></li>
+          <li><a href="products.html?category=mouldings">Raw Mouldings & Glass</a></li>
+        </ul>
+        <div class="wholesale-perk-hint">
+          <span class="icon">📦</span>
+          <span>Wholesale Minimum: <strong>1 Master Carton or Bundle</strong></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li><a href="categories.html">Categories</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-current" id="breadcrumb-category-name" aria-current="page">All Products</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="page-hero-text">
+          <div class="page-hero-badge" id="catalog-page-badge">
+            <span>🖼️</span> Master Catalog & Inventory
+          </div>
+          <h1 class="page-hero-title" id="catalog-hero-title">
+            All Framing Products & <span>Workshop Supplies</span>
+          </h1>
+          <p class="page-hero-desc" id="catalog-hero-desc">
+            Explore 24K gold foil Hindu God frames, custom wedding floaters, corporate diploma boxes, reseller master cartons, and raw moulding lengths with live wholesale volume pricing.
+          </p>
+          <div class="page-hero-stats">
+            <div class="hero-stat-pill">
+              <span>🛍️</span> <strong id="hero-total-count">20 Items</strong> in Catalog
+            </div>
+            <div class="hero-stat-pill">
+              <span>🏷️</span> Dual <strong>Retail & Wholesale</strong> Pricing
+            </div>
+            <div class="hero-stat-pill">
+              <span>⚡</span> <strong>Instant Dispatch</strong> Pan-India
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Catalog Section -->
+    <section class="catalog-section" id="catalog-section">
+      <div class="container">
+        
+        <!-- Mobile / Tablet Filter Button (<= 1024px) -->
+        <div class="mobile-filter-bar">
+          <button id="open-mobile-filter-btn" class="btn-mobile-filter-trigger" aria-label="Open filter and sorting options">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+            <span>Filter & Refine Products</span>
+            <span class="filter-count-badge" id="mobile-filter-count">All</span>
+          </button>
+        </div>
+
+        <div class="catalog-layout">
+          
+          <!-- Desktop Sidebar Filters -->
+          <aside class="catalog-sidebar" id="catalog-sidebar" aria-label="Filter Options">
+            <div class="sidebar-header">
+              <h3>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                </svg>
+                Filter Catalog
+              </h3>
+              <button id="reset-filters-btn" class="text-button" title="Reset all applied filters">Reset All</button>
+            </div>
+
+            <!-- Categories Accordion / Radio list -->
+            <div class="filter-group">
+              <h4 class="filter-title">Framing Categories</h4>
+              <div class="filter-options-list" id="category-filter-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+
+            <!-- Customer Segment / Pack Format -->
+            <div class="filter-group">
+              <h4 class="filter-title">Customer Format & Packing</h4>
+              <label class="checkbox-label">
+                <input type="checkbox" name="targetAudience" value="retail" checked>
+                <span>Individual Retail Pieces (No MOQ)</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="targetAudience" value="wholesale" checked>
+                <span>Retailer Bulk Cartons (12-40 pcs)</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="targetAudience" value="materials" checked>
+                <span>Raw Moulding Bundles & Hardware</span>
+              </label>
+            </div>
+
+            <!-- Price Range Slider (in INR ₹) -->
+            <div class="filter-group">
+              <div class="filter-title-row">
+                <h4 class="filter-title">Max Price</h4>
+                <span class="price-val" id="current-price-val">Up to ₹6,000</span>
+              </div>
+              <div class="price-slider-wrap">
+                <input 
+                  type="range" 
+                  id="price-range-slider" 
+                  min="60" 
+                  max="6000" 
+                  step="50" 
+                  value="6000" 
+                  aria-label="Filter by maximum price in INR"
+                />
+                <div class="price-range-labels">
+                  <span>₹60</span>
+                  <span id="price-mode-indicator">Retail MRP</span>
+                  <span>₹6,000+</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Material Types -->
+            <div class="filter-group">
+              <h4 class="filter-title">Core Material</h4>
+              <div class="filter-options-list" id="material-filter-list">
+                <!-- Dynamically generated -->
+              </div>
+            </div>
+
+            <!-- Frame Finish / Color -->
+            <div class="filter-group">
+              <h4 class="filter-title">Frame Finish & Color</h4>
+              <div class="filter-options-list" id="finish-filter-list">
+                <!-- Dynamically generated -->
+              </div>
+            </div>
+
+            <!-- Bulk Dealership CTA in Sidebar -->
+            <div class="sidebar-promo-card">
+              <div class="promo-icon">📦</div>
+              <h4>Own a Framing Shop?</h4>
+              <p>Get master cartons with up to 45% retailer margins and GST input invoice.</p>
+              <button id="sidebar-rfq-btn" class="btn btn-primary btn-sm btn-full">Get Dealership Rate List</button>
+            </div>
+          </aside>
+
+          <!-- Main Product Grid & Controls -->
+          <div class="catalog-main">
+            <!-- Top Controls Bar -->
+            <div class="catalog-top-bar">
+              <div class="results-meta">
+                <span class="badge-pill teal" id="product-count-badge">20 Products</span>
+                <span class="results-text" id="catalog-subtitle">Showing all available framing designs and supplies</span>
+              </div>
+
+              <!-- Sorting & View Layout Switcher -->
+              <div class="sort-and-view">
+                <label for="sort-select" class="sort-label">Sort By:</label>
+                <select id="sort-select" class="custom-select">
+                  <option value="featured">Featured / Recommended</option>
+                  <option value="bestseller">Best Selling First</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="rating">Highest Customer Rating</option>
+                </select>
+
+                <div class="view-toggles" aria-label="Catalog Layout Mode">
+                  <button id="view-grid-btn" class="view-btn active" title="Grid View" aria-label="Switch to Grid View">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm-11 11h7v7H3v-7zm11 0h7v7h-7v-7z"/>
+                    </svg>
+                  </button>
+                  <button id="view-list-btn" class="view-btn" title="List View" aria-label="Switch to List View">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Active Filter Badges Row -->
+            <div class="active-filter-tags-row">
+              <span class="tags-label">Active Filters:</span>
+              <div class="tags-wrapper" id="tags-wrapper">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products-grid" id="products-grid" aria-live="polite">
+              <!-- Rendered via JavaScript with realistic Indian photos and prices -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state hidden" id="empty-state">
+              <div class="empty-icon">🪟</div>
+              <h3>No framing items match your current filter</h3>
+              <p>Try clearing your search query, increasing the price range, or selecting another category.</p>
+              <button id="empty-reset-btn" class="btn btn-primary">Reset Filters to Show All</button>
+            </div>
+
+            <!-- Pagination / Load All -->
+            <div class="pagination-bar" id="pagination-bar">
+              <span class="pagination-info" id="pagination-info">Showing 12 of 20 products</span>
+              <button id="load-more-btn" class="btn btn-outline">Load All 20 Products</button>
+            </div>
+
+            <!-- Bottom B2B Reassurance Banner -->
+            <div class="wholesale-banner" style="margin-top: 3rem;">
+              <div class="wholesale-banner-content">
+                <span class="badge-pill gold">Pan-India Wholesale Supply</span>
+                <h3>Direct Workshop Dispatch for Stores & Mandir Gift Shops</h3>
+                <p>
+                  Specializing in 24K gold foil deity pooja frames, wedding studio canvases, and PS gold moulding sticks. 
+                  Get certified safe transport packaging with full replacement warranty against courier damage.
+                </p>
+                <div class="wholesale-banner-actions">
+                  <a href="https://wa.me/919876543210" target="_blank" class="btn btn-gold" rel="noopener">
+                    💬 WhatsApp Wholesale Desk (+91 98765 43210)
+                  </a>
+                  <button id="open-rfq-banner-btn" class="btn btn-outline-white">Request Official Wholesale Rate List</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile Slide-Over Filter Drawer -->
+  <div class="mobile-filter-drawer-backdrop" id="mobile-filter-drawer-backdrop" role="dialog" aria-modal="true" aria-label="Mobile Filters">
+    <div class="mobile-filter-drawer">
+      <div class="mobile-filter-header">
+        <h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+          </svg>
+          Filter & Refine
+        </h3>
+        <button id="close-mobile-filter-btn" class="drawer-close" aria-label="Close filters">&times;</button>
+      </div>
+
+      <div class="mobile-filter-body">
+        <!-- Customer Format in Mobile Drawer -->
+        <div class="filter-group">
+          <h4 class="filter-title">Customer Format & Packing</h4>
+          <div class="filter-options-list">
+            <label class="checkbox-label">
+              <input type="checkbox" name="targetAudience" value="retail" checked>
+              <span>Individual Retail Pieces (No MOQ)</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="targetAudience" value="wholesale" checked>
+              <span>Retailer Bulk Cartons (12-40 pcs)</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="targetAudience" value="materials" checked>
+              <span>Raw Moulding Bundles & Hardware</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Category in Mobile Drawer -->
+        <div class="filter-group">
+          <h4 class="filter-title">Category</h4>
+          <div class="filter-options-list" id="mobile-category-list">
+            <!-- Cloned/injected via JS -->
+          </div>
+        </div>
+
+        <!-- Price Range in Mobile Drawer -->
+        <div class="filter-group">
+          <div class="filter-title-row">
+            <h4 class="filter-title">Max Price</h4>
+            <span class="price-val" id="mobile-price-val">Up to ₹6,000</span>
+          </div>
+          <div class="price-slider-wrap">
+            <input 
+              type="range" 
+              id="mobile-price-slider" 
+              min="60" 
+              max="6000" 
+              step="50" 
+              value="6000"
+            />
+            <div class="price-range-labels">
+              <span>₹60</span>
+              <span>₹6,000+</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Material in Mobile Drawer -->
+        <div class="filter-group">
+          <h4 class="filter-title">Core Material</h4>
+          <div class="filter-options-list" id="mobile-material-list">
+            <!-- Cloned/injected via JS -->
+          </div>
+        </div>
+
+        <!-- Finish in Mobile Drawer -->
+        <div class="filter-group">
+          <h4 class="filter-title">Frame Finish</h4>
+          <div class="filter-options-list" id="mobile-finish-list">
+            <!-- Cloned/injected via JS -->
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-filter-footer">
+        <button id="mobile-reset-filters-btn" class="btn btn-outline" style="flex: 1;">Reset</button>
+        <button id="apply-mobile-filter-btn" class="btn btn-primary" style="flex: 2;">Apply Filters</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-backdrop hidden" id="quick-view-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+    <div class="modal-container quick-view-container">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div id="modal-product-details">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Request Wholesale Dealership RFQ Modal -->
+  <div class="modal-backdrop hidden" id="rfq-modal" role="dialog" aria-modal="true" aria-labelledby="rfq-title">
+    <div class="modal-container">
+      <button class="modal-close" id="rfq-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h3 id="rfq-title">Request Wholesale Dealership & Price List</h3>
+        <p>Get our official 2026 factory catalogue, carton pricing, and dealership terms for your city.</p>
+      </div>
+      <form id="rfq-form" class="rfq-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="rfq-name">Your Full Name / Contact Person *</label>
+            <input type="text" id="rfq-name" required placeholder="e.g. Rajesh Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfq-business">Shop / Business / Studio Name *</label>
+            <input type="text" id="rfq-business" required placeholder="e.g. Sharma Photo & Gift Gallery">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="rfq-phone">WhatsApp Contact Number *</label>
+            <input type="tel" id="rfq-phone" required placeholder="e.g. 9876543210">
+          </div>
+          <div class="form-group">
+            <label for="rfq-city">City & State *</label>
+            <input type="text" id="rfq-city" required placeholder="e.g. Varanasi, UP">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfq-interest">Primary Products of Interest</label>
+          <select id="rfq-interest">
+            <option value="hindu-gods">Hindu Gods' Pooja Mandir Frames</option>
+            <option value="bulk-retail-cartons">Retailer Bulk Cartons (8x10 / 6x8)</option>
+            <option value="wedding-marriage">Wedding Studio Canvases & Floaters</option>
+            <option value="mouldings">Raw Moulding Sticks & Bundles</option>
+            <option value="corporate-framing">Corporate Degrees & Office Bulk Framing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="rfq-notes">Estimated Monthly Volume or Specific Requirements</label>
+          <textarea id="rfq-notes" rows="3" placeholder="Tell us about the sizes you need and your required quantities..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Submit Inquiry for WhatsApp Dispatch</button>
+      </form>
+      <div id="rfq-success" class="rfq-success hidden">
+        <div class="success-icon">✓</div>
+        <h4>Inquiry Received!</h4>
+        <p>Our wholesale team has sent the catalog and rate sheet to your WhatsApp number. You may also call us directly at <strong>+91 98765 43210</strong>.</p>
+        <button class="btn btn-outline" id="rfq-success-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart / Order Quote Slide-Over Drawer -->
+  <div class="drawer-backdrop hidden" id="cart-drawer-backdrop">
+    <div class="drawer-panel" id="cart-drawer-panel">
+      <div class="drawer-header">
+        <div class="drawer-title">
+          <h3>Your Framing Order & Quote</h3>
+          <span class="badge-pill" id="drawer-pricing-mode">Retail Pricing</span>
+        </div>
+        <button class="drawer-close" id="drawer-close-btn" aria-label="Close drawer">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="cart-items-container">
+        <!-- Rendered by JavaScript -->
+      </div>
+
+      <div class="drawer-footer">
+        <div class="drawer-totals">
+          <div class="drawer-row subtotal">
+            <span>Subtotal:</span>
+            <span id="drawer-subtotal">₹0</span>
+          </div>
+          <div class="drawer-row discount" id="drawer-discount-row">
+            <span>Wholesale Tier Savings:</span>
+            <span id="drawer-discount">-₹0</span>
+          </div>
+          <div class="drawer-row total-row">
+            <strong>Estimated Total:</strong>
+            <strong id="drawer-total">₹0</strong>
+          </div>
+        </div>
+        <div class="drawer-actions">
+          <button class="btn btn-primary btn-full" id="checkout-btn">Proceed to Inquiry / WhatsApp Quote</button>
+          <button class="btn btn-outline btn-full" id="download-rfq-btn">Export Order Spec Sheet (.TXT)</button>
+        </div>
+        <p class="drawer-note">GST & transport freight calculated based on destination pincode.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-mark">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <rect x="7" y="7" width="10" height="10" rx="1" ry="1"></rect>
+            </svg>
+          </div>
+          <span class="brand-name">Janki Framings</span>
+        </div>
+        <p class="footer-desc">
+          Master picture framers and wholesale distributors specializing in Hindu God pooja frames, grand royal wedding portraits, corporate degrees, and workshop mouldings.
+        </p>
+        <div class="footer-badges">
+          <span class="f-badge">100% Seasoned Timber</span>
+          <span class="f-badge">24K Gold Foil Art</span>
+          <span class="f-badge">GST Registered B2B</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Framing Categories</h4>
+        <ul>
+          <li><a href="products.html?category=hindu-gods">Hindu Gods' Pooja Frames</a></li>
+          <li><a href="products.html?category=wedding-marriage">Marriage & Couple Wedding Frames</a></li>
+          <li><a href="products.html?category=corporate-framing">Corporate & Degree Frames</a></li>
+          <li><a href="products.html?category=bulk-retail-cartons">Retailer Bulk Cartons (8x10, 6x8)</a></li>
+          <li><a href="products.html?category=family-personal">Family & Milestone Collages</a></li>
+          <li><a href="products.html?category=mouldings">Synthetic PS Gold Mouldings</a></li>
+          <li><a href="products.html?category=framing-materials">Workshop Glass & Hardware</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Wholesale & B2B Supply</h4>
+        <ul>
+          <li><a href="index.html#wholesale-info-section">Wholesale Partnership</a></li>
+          <li><a href="#" id="footer-toggle-wholesale">Toggle Wholesale / Retail Mode</a></li>
+          <li><a href="#rfq-modal" class="open-rfq-link">Request Factory Price List</a></li>
+          <li><a href="products.html?audience=wholesale">Volume Carton Catalog</a></li>
+          <li><a href="products.html?category=mouldings">Moulding Bundle Distributor</a></li>
+          <li><a href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp Direct Order Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4>Factory & Showroom</h4>
+        <p>Janki Framing Works, Plot 42-B, Industrial Estate<br>Main Market Road, India</p>
+        <p><strong>WhatsApp / Sales:</strong> +91 98765 43210<br><strong>Email:</strong> wholesale@jankiframings.com</p>
+        <p class="hours">Mon - Sat: 9:00 AM - 8:00 PM IST<br>Sunday: 10:00 AM - 2:00 PM IST</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Janki Framings. All rights reserved. Handcrafted with devotion for retail and wholesale partners.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Wholesale Terms & Transport</a>
+          <a href="#">Damage-Free Delivery Guarantee</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

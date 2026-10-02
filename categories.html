@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Framing Categories | Janki Framings - Hindu God Pooja Frames & Wholesale Supply</title>
+  <meta name="description" content="Explore handcrafted framing collections by Janki Framings: Sacred Hindu God Pooja frames, royal wedding portraits, corporate degrees, retailer bulk cartons and workshop mouldings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Store Announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-text">
+        <span class="badge-pill teal">B2B & Retail</span>
+        <span>Factory Direct Framing Works • Specializing in <strong>Hindu God Pooja Frames</strong>, Wedding & Corporate Orders • Pan-India Transport</span>
+      </div>
+      <div class="announcement-actions">
+        <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-link" rel="noopener">
+          <span>💬 WhatsApp Wholesale: +91 98765 43210</span>
+        </a>
+        <button id="open-rfq-top-btn" class="text-link">Request Bulk Price List</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-content">
+      <!-- Logo & Brand: Janki Framings -->
+      <a href="index.html" class="brand-logo" aria-label="Janki Framings Home">
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <rect x="7" y="7" width="10" height="10" rx="1" ry="1"></rect>
+            <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Janki <span>Framings</span></span>
+          <span class="brand-tagline">Devotional • Wedding • Corporate • Wholesale</span>
+        </div>
+      </a>
+
+      <!-- Search Input in Header -->
+      <form class="search-wrapper" action="products.html" method="GET">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input 
+          type="search" 
+          name="search"
+          id="global-search" 
+          placeholder="Search God frames, wedding portraits, certificates, mouldings..." 
+          aria-label="Search catalog"
+        />
+        <button type="button" id="clear-search-btn" class="clear-search hidden" aria-label="Clear search">&times;</button>
+      </form>
+
+      <!-- Customer Mode Selector (Retail vs Wholesale Switcher) -->
+      <div class="mode-switcher-container">
+        <label class="mode-label" for="wholesale-toggle">
+          <span class="mode-title">Mode:</span>
+          <div class="toggle-control">
+            <span class="mode-opt active" id="opt-retail">Retail</span>
+            <div class="switch">
+              <input type="checkbox" id="wholesale-toggle" aria-label="Toggle Wholesale Mode">
+              <span class="slider round"></span>
+            </div>
+            <span class="mode-opt" id="opt-wholesale">Wholesale / B2B</span>
+          </div>
+        </label>
+      </div>
+
+      <!-- Action items: Quote Drawer / Cart -->
+      <div class="header-actions">
+        <button id="cart-drawer-toggle" class="btn-icon-count" aria-label="View Order or Quote List">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="count-badge" id="cart-item-count">0</span>
+          <span class="action-label" id="cart-label">Order / Quote</span>
+        </button>
+
+        <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Open mobile navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Secondary Navigation Links Bar -->
+    <nav class="secondary-nav" id="secondary-nav" aria-label="Main Navigation">
+      <div class="container nav-links-container">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html" class="active">Photo Categories</a></li>
+          <li><a href="products.html?sort=bestseller">Most Sold</a></li>
+          <li><a href="products.html">All Products Catalog</a></li>
+          <li><a href="index.html#wholesale-info-section">Wholesale B2B Supply</a></li>
+          <li><a href="products.html?category=mouldings">Raw Mouldings & Glass</a></li>
+        </ul>
+        <div class="wholesale-perk-hint">
+          <span class="icon">📦</span>
+          <span>Wholesale Minimum: <strong>1 Master Carton or Bundle</strong></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-current" aria-current="page">Framing Categories Directory</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="page-hero-text">
+          <div class="page-hero-badge">
+            <span>🪟</span> Complete Framing Portfolio
+          </div>
+          <h1 class="page-hero-title">
+            Artisan Framing Categories <span>Handcrafted with Devotion</span>
+          </h1>
+          <p class="page-hero-desc">
+            Explore 7 specialized framing collections tailored for Indian homes, temple sanctums, wedding photography studios, and wholesale framing retail stores across India.
+          </p>
+          <div class="page-hero-stats">
+            <div class="hero-stat-pill">
+              <span>🕉️</span> <strong>1,200+</strong> God & Mandir Artworks
+            </div>
+            <div class="hero-stat-pill">
+              <span>📦</span> <strong>45% Off</strong> Master Carton B2B Tiers
+            </div>
+            <div class="hero-stat-pill">
+              <span>🚚</span> <strong>Pan-India</strong> Bubble Crated Transport
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Directory Showcase Grid -->
+    <section class="categories-showcase-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-left">
+            <span class="section-kicker">Browse By Collection</span>
+            <h2 class="section-title">Explore Framing Specialties</h2>
+            <p class="section-subtitle">
+              Click any category to browse individual sizes, custom frame finish options, and volume wholesale prices.
+            </p>
+          </div>
+          <div class="header-actions-extra">
+            <a href="products.html" class="btn btn-outline">View Complete Catalog (20 Items) &rarr;</a>
+          </div>
+        </div>
+
+        <div class="categories-showcase-grid">
+          
+          <!-- Category 1: Hindu Gods (Primary Flagship) -->
+          <article class="cat-showcase-card primary-featured">
+            <div class="cat-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=700&auto=format&fit=crop&q=80" 
+                alt="Hindu Gods Pooja Mandir Frames"
+                loading="lazy"
+              />
+              <div class="cat-media-overlay">
+                <span class="cat-tag-pill">Primary Specialty</span>
+                <div class="cat-title-row">
+                  <span class="cat-icon-badge">🕉️</span>
+                  <h2 class="cat-name-h2">Hindu Gods' Pooja Frames</h2>
+                </div>
+              </div>
+            </div>
+            <div class="cat-card-content">
+              <p class="cat-card-desc">
+                Sacred 24K gold foil embossed deities, 3D acrylic shadowboxes, and seasoned teakwood mandir frames. Designed strictly following Vastu traditions with non-glare sheet glass.
+              </p>
+              
+              <div class="cat-deity-pills">
+                <span class="cat-deity-label">Popular Sacred Deities:</span>
+                <div class="deity-tags-row">
+                  <a href="products.html?category=hindu-gods&search=Ram" class="deity-tag-item">Shree Ram Darbar</a>
+                  <a href="products.html?category=hindu-gods&search=Krishna" class="deity-tag-item">Radha Krishna</a>
+                  <a href="products.html?category=hindu-gods&search=Balaji" class="deity-tag-item">Tirupati Balaji</a>
+                  <a href="products.html?category=hindu-gods&search=Shiva" class="deity-tag-item">Shiv Parivar</a>
+                  <a href="products.html?category=hindu-gods&search=Lakshmi" class="deity-tag-item">Lakshmi Ganesha</a>
+                  <a href="products.html?category=hindu-gods&search=Hanuman" class="deity-tag-item">Panchmukhi Hanuman</a>
+                </div>
+              </div>
+
+              <div class="cat-pricing-meta">
+                <span class="cat-price-from">Starting from <strong>₹780</strong></span>
+                <span class="cat-item-count">6 Designs Available</span>
+              </div>
+
+              <a href="products.html?category=hindu-gods" class="cat-card-cta">
+                Browse Pooja Mandir Frames &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 2: Marriage & Couple Photos -->
+          <article class="cat-showcase-card">
+            <div class="cat-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&auto=format&fit=crop&q=80" 
+                alt="Marriage and Wedding Portrait Framing"
+                loading="lazy"
+              />
+              <div class="cat-media-overlay">
+                <span class="cat-tag-pill">Wedding Studios</span>
+                <div class="cat-title-row">
+                  <span class="cat-icon-badge">💍</span>
+                  <h2 class="cat-name-h2">Marriage & Couple Photos</h2>
+                </div>
+              </div>
+            </div>
+            <div class="cat-card-content">
+              <p class="cat-card-desc">
+                Royal baroque gold leaf borders, archival canvas floaters, and multi-aperture shaadi collages. Trusted by leading wedding photographers for heirloom bridal prints.
+              </p>
+              
+              <div class="cat-deity-pills">
+                <span class="cat-deity-label">Popular Formats:</span>
+                <div class="deity-tags-row">
+                  <span class="deity-tag-item">24x36 Royal Canvas Floaters</span>
+                  <span class="deity-tag-item">9-in-1 Shaadi Collages</span>
+                  <span class="deity-tag-item">Vintage Gold Leaf Filigree</span>
+                </div>
+              </div>
+
+              <div class="cat-pricing-meta">
+                <span class="cat-price-from">Starting from <strong>₹980</strong></span>
+                <span class="cat-item-count">3 Designs Available</span>
+              </div>
+
+              <a href="products.html?category=wedding-marriage" class="cat-card-cta">
+                Browse Wedding Frames &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 3: Corporate & Certificates -->
+          <article class="cat-showcase-card">
+            <div class="cat-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=700&auto=format&fit=crop&q=80" 
+                alt="Corporate Certificates and Degree Framing"
+                loading="lazy"
+              />
+              <div class="cat-media-overlay">
+                <span class="cat-tag-pill">Offices & Colleges</span>
+                <div class="cat-title-row">
+                  <span class="cat-icon-badge">🏢</span>
+                  <h2 class="cat-name-h2">Corporate & Certificates</h2>
+                </div>
+              </div>
+            </div>
+            <div class="cat-card-content">
+              <p class="cat-card-desc">
+                Clean matte black frames, golden filet accents, acid-free mount boards, and executive skyline art for boardrooms, university convocations, and corporate honor walls.
+              </p>
+              
+              <div class="cat-deity-pills">
+                <span class="cat-deity-label">Popular Formats:</span>
+                <div class="deity-tags-row">
+                  <span class="deity-tag-item">A4 & A3 Degree Mounts</span>
+                  <span class="deity-tag-item">Boardroom Panoramas</span>
+                  <span class="deity-tag-item">Employee Award Plaques</span>
+                </div>
+              </div>
+
+              <div class="cat-pricing-meta">
+                <span class="cat-price-from">Starting from <strong>₹195</strong></span>
+                <span class="cat-item-count">3 Designs Available</span>
+              </div>
+
+              <a href="products.html?category=corporate-framing" class="cat-card-cta">
+                Browse Corporate Frames &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 4: Retailer Bulk Cartons -->
+          <article class="cat-showcase-card">
+            <div class="cat-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&auto=format&fit=crop&q=80" 
+                alt="Retailer Bulk Cartons for Frame Shops"
+                loading="lazy"
+              />
+              <div class="cat-media-overlay">
+                <span class="cat-tag-pill">High Reseller Margin</span>
+                <div class="cat-title-row">
+                  <span class="cat-icon-badge">📦</span>
+                  <h2 class="cat-name-h2">Retailer Bulk Cartons</h2>
+                </div>
+              </div>
+            </div>
+            <div class="cat-card-content">
+              <p class="cat-card-desc">
+                Factory-packed master cartons of 12, 24, and 40 pieces ready for immediate retail counter display. Ideal for photo studios, stationery dealers, and gift retailers.
+              </p>
+              
+              <div class="cat-deity-pills">
+                <span class="cat-deity-label">Master Carton Packs:</span>
+                <div class="deity-tags-row">
+                  <span class="deity-tag-item">8x10 Carton of 24 (₹220/pc)</span>
+                  <span class="deity-tag-item">6x8 Mandir Carton of 40 (₹135/pc)</span>
+                  <span class="deity-tag-item">Square 10x10 Carton of 12</span>
+                </div>
+              </div>
+
+              <div class="cat-pricing-meta">
+                <span class="cat-price-from">Starting from <strong>₹135/pc</strong></span>
+                <span class="cat-item-count">3 Master Packs</span>
+              </div>
+
+              <a href="products.html?category=bulk-retail-cartons" class="cat-card-cta">
+                Browse Retailer Cartons &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 5: Family & Baby Collages -->
+          <article class="cat-showcase-card">
+            <div class="cat-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=700&auto=format&fit=crop&q=80" 
+                alt="Family and Baby Milestone Collages"
+                loading="lazy"
+              />
+              <div class="cat-media-overlay">
+                <span class="cat-tag-pill">Personal Decor</span>
+                <div class="cat-title-row">
+                  <span class="cat-icon-badge">👨‍👩‍👧</span>
+                  <h2 class="cat-name-h2">Family & Baby Collages</h2>
+                </div>
+              </div>
+            </div>
+            <div class="cat-card-content">
+              <p class="cat-card-desc">
+                Multi-window matboards for 12-month baby growth journeys, family pedigree trees, and 7-piece curated living room gallery frame arrangements with hanging templates.
+              </p>
+              
+              <div class="cat-deity-pills">
+                <span class="cat-deity-label">Popular Sets:</span>
+                <div class="deity-tags-row">
+                  <span class="deity-tag-item">12-Month Baby Milestone Mat</span>
+                  <span class="deity-tag-item">7-Piece Teak Living Room Wall</span>
+                  <span class="deity-tag-item">5-Aperture Family Arch</span>
+                </div>
+              </div>
+
+              <div class="cat-pricing-meta">
+                <span class="cat-price-from">Starting from <strong>₹880</strong></span>
+                <span class="cat-item-count">2 Collections</span>
+              </div>
+
+              <a href="products.html?category=family-personal" class="cat-card-cta">
+                Browse Family Collages &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 6: Raw & Gold Moulding Sticks -->
+          <article class="cat-showcase-card">
+            <div class="cat-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=700&auto=format&fit=crop&q=80" 
+                alt="Raw and Synthetic Gold Moulding Sticks"
+                loading="lazy"
+              />
+              <div class="cat-media-overlay">
+                <span class="cat-tag-pill">Workshop Supply</span>
+                <div class="cat-title-row">
+                  <span class="cat-icon-badge">🪵</span>
+                  <h2 class="cat-name-h2">Raw & Gold Moulding Sticks</h2>
+                </div>
+              </div>
+            </div>
+            <div class="cat-card-content">
+              <p class="cat-card-desc">
+                Premium synthetic polystyrene (PS) gold bars and seasoned 100% natural teakwood moulding sticks (bundles of 10 × 9.5 ft) for framing factories and craftsman workshops.
+              </p>
+              
+              <div class="cat-deity-pills">
+                <span class="cat-deity-label">Moulding Profiles:</span>
+                <div class="deity-tags-row">
+                  <span class="deity-tag-item">2-Inch Royal Temple Gold Bar</span>
+                  <span class="deity-tag-item">Seasoned Natural Teak Timber</span>
+                  <span class="deity-tag-item">Deep Shadowbox Profiles</span>
+                </div>
+              </div>
+
+              <div class="cat-pricing-meta">
+                <span class="cat-price-from">Starting from <strong>₹1,350/bundle</strong></span>
+                <span class="cat-item-count">2 Workshop Bundles</span>
+              </div>
+
+              <a href="products.html?category=mouldings" class="cat-card-cta">
+                Browse Moulding Bundles &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 7: Glass, Mounts & Hardware -->
+          <article class="cat-showcase-card">
+            <div class="cat-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=700&auto=format&fit=crop&q=80" 
+                alt="Framing Hardware and Workshop Materials"
+                loading="lazy"
+              />
+              <div class="cat-media-overlay">
+                <span class="cat-tag-pill">Framing Supplies</span>
+                <div class="cat-title-row">
+                  <span class="cat-icon-badge">🔩</span>
+                  <h2 class="cat-name-h2">Glass, Mounts & Hardware</h2>
+                </div>
+              </div>
+            </div>
+            <div class="cat-card-content">
+              <p class="cat-card-desc">
+                Workshop essentials including high-tensile flexipoint tabs (box of 5,000), heavy-gauge steel D-rings, hanging wire, acid-free mount boards, and 2mm clear glass sheets.
+              </p>
+              
+              <div class="cat-deity-pills">
+                <span class="cat-deity-label">Hardware Essentials:</span>
+                <div class="deity-tags-row">
+                  <span class="deity-tag-item">5,000 Flexipoints Box</span>
+                  <span class="deity-tag-item">200 Heavy-Gauge D-Rings</span>
+                  <span class="deity-tag-item">Rustproof Zinc Screws</span>
+                </div>
+              </div>
+
+              <div class="cat-pricing-meta">
+                <span class="cat-price-from">Starting from <strong>₹480/box</strong></span>
+                <span class="cat-item-count">1 Workshop Pack</span>
+              </div>
+
+              <a href="products.html?category=framing-materials" class="cat-card-cta">
+                Browse Hardware Packs &rarr;
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- B2B Wholesale Perks Banner -->
+        <div class="categories-perks-wrap">
+          <div class="perks-header">
+            <h3>Why Framing Retailers & Mandir Stores Buy Direct From Janki</h3>
+            <p>
+              We eliminate middlemen margins and provide complete transit-safe packaging engineered for Indian courier and road transport networks.
+            </p>
+          </div>
+          <div class="perks-3col">
+            <div class="perk-box">
+              <div class="perk-box-icon">📦</div>
+              <h4>Master Carton Pricing</h4>
+              <p>Save 35% to 45% when ordering full factory cartons (12, 24, or 40 pieces) with barcoded individual packaging for retail shelves.</p>
+            </div>
+            <div class="perk-box">
+              <div class="perk-box-icon">🛡️</div>
+              <h4>Breakage-Free Transit</h4>
+              <p>5-layer corrugated honeycomb boxes, 25mm thermocol corner protectors, and reinforced bubble wrap ensure zero glass breakage.</p>
+            </div>
+            <div class="perk-box">
+              <div class="perk-box-icon">🧾</div>
+              <h4>GST B2B Tax Invoices</h4>
+              <p>Get full 18% GST input credit on all commercial and wholesale purchases with prompt HSN-coded e-way bills and transporter tracking.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Request Wholesale Dealership RFQ Modal -->
+  <div class="modal-backdrop hidden" id="rfq-modal" role="dialog" aria-modal="true" aria-labelledby="rfq-title">
+    <div class="modal-container">
+      <button class="modal-close" id="rfq-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h3 id="rfq-title">Request Wholesale Dealership & Price List</h3>
+        <p>Get our official 2026 factory catalogue, carton pricing, and dealership terms for your city.</p>
+      </div>
+      <form id="rfq-form" class="rfq-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="rfq-name">Your Full Name / Contact Person *</label>
+            <input type="text" id="rfq-name" required placeholder="e.g. Rajesh Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfq-business">Shop / Business / Studio Name *</label>
+            <input type="text" id="rfq-business" required placeholder="e.g. Sharma Photo & Gift Gallery">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="rfq-phone">WhatsApp Contact Number *</label>
+            <input type="tel" id="rfq-phone" required placeholder="e.g. 9876543210">
+          </div>
+          <div class="form-group">
+            <label for="rfq-city">City & State *</label>
+            <input type="text" id="rfq-city" required placeholder="e.g. Varanasi, UP">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfq-interest">Primary Products of Interest</label>
+          <select id="rfq-interest">
+            <option value="hindu-gods">Hindu Gods' Pooja Mandir Frames</option>
+            <option value="bulk-retail-cartons">Retailer Bulk Cartons (8x10 / 6x8)</option>
+            <option value="wedding-marriage">Wedding Studio Canvases & Floaters</option>
+            <option value="mouldings">Raw Moulding Sticks & Bundles</option>
+            <option value="corporate-framing">Corporate Degrees & Office Bulk Framing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="rfq-notes">Estimated Monthly Volume or Specific Requirements</label>
+          <textarea id="rfq-notes" rows="3" placeholder="Tell us about the sizes you need and your required quantities..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Submit Inquiry for WhatsApp Dispatch</button>
+      </form>
+      <div id="rfq-success" class="rfq-success hidden">
+        <div class="success-icon">✓</div>
+        <h4>Inquiry Received!</h4>
+        <p>Our wholesale team has sent the catalog and rate sheet to your WhatsApp number. You may also call us directly at <strong>+91 98765 43210</strong>.</p>
+        <button class="btn btn-outline" id="rfq-success-close">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart / Order Quote Slide-Over Drawer -->
+  <div class="drawer-backdrop hidden" id="cart-drawer-backdrop">
+    <div class="drawer-panel" id="cart-drawer-panel">
+      <div class="drawer-header">
+        <div class="drawer-title">
+          <h3>Your Framing Order & Quote</h3>
+          <span class="badge-pill" id="drawer-pricing-mode">Retail Pricing</span>
+        </div>
+        <button class="drawer-close" id="drawer-close-btn" aria-label="Close drawer">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="cart-items-container">
+        <!-- Rendered by JavaScript -->
+      </div>
+
+      <div class="drawer-footer">
+        <div class="drawer-totals">
+          <div class="drawer-row subtotal">
+            <span>Subtotal:</span>
+            <span id="drawer-subtotal">₹0</span>
+          </div>
+          <div class="drawer-row discount" id="drawer-discount-row">
+            <span>Wholesale Tier Savings:</span>
+            <span id="drawer-discount">-₹0</span>
+          </div>
+          <div class="drawer-row total-row">
+            <strong>Estimated Total:</strong>
+            <strong id="drawer-total">₹0</strong>
+          </div>
+        </div>
+        <div class="drawer-actions">
+          <button class="btn btn-primary btn-full" id="checkout-btn">Proceed to Inquiry / WhatsApp Quote</button>
+          <button class="btn btn-outline btn-full" id="download-rfq-btn">Export Order Spec Sheet (.TXT)</button>
+        </div>
+        <p class="drawer-note">GST & transport freight calculated based on destination pincode.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-mark">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <rect x="7" y="7" width="10" height="10" rx="1" ry="1"></rect>
+            </svg>
+          </div>
+          <span class="brand-name">Janki Framings</span>
+        </div>
+        <p class="footer-desc">
+          Master picture framers and wholesale distributors specializing in Hindu God pooja frames, grand royal wedding portraits, corporate degrees, and workshop mouldings.
+        </p>
+        <div class="footer-badges">
+          <span class="f-badge">100% Seasoned Timber</span>
+          <span class="f-badge">24K Gold Foil Art</span>
+          <span class="f-badge">GST Registered B2B</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Framing Categories</h4>
+        <ul>
+          <li><a href="products.html?category=hindu-gods">Hindu Gods' Pooja Frames</a></li>
+          <li><a href="products.html?category=wedding-marriage">Marriage & Couple Wedding Frames</a></li>
+          <li><a href="products.html?category=corporate-framing">Corporate & Degree Frames</a></li>
+          <li><a href="products.html?category=bulk-retail-cartons">Retailer Bulk Cartons (8x10, 6x8)</a></li>
+          <li><a href="products.html?category=family-personal">Family & Milestone Collages</a></li>
+          <li><a href="products.html?category=mouldings">Synthetic PS Gold Mouldings</a></li>
+          <li><a href="products.html?category=framing-materials">Workshop Glass & Hardware</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Wholesale & B2B Supply</h4>
+        <ul>
+          <li><a href="index.html#wholesale-info-section">Wholesale Partnership</a></li>
+          <li><a href="#" id="footer-toggle-wholesale">Toggle Wholesale / Retail Mode</a></li>
+          <li><a href="#rfq-modal" class="open-rfq-link">Request Factory Price List</a></li>
+          <li><a href="products.html?audience=wholesale">Volume Carton Catalog</a></li>
+          <li><a href="products.html?category=mouldings">Moulding Bundle Distributor</a></li>
+          <li><a href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp Direct Order Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4>Factory & Showroom</h4>
+        <p>Janki Framing Works, Plot 42-B, Industrial Estate<br>Main Market Road, India</p>
+        <p><strong>WhatsApp / Sales:</strong> +91 98765 43210<br><strong>Email:</strong> wholesale@jankiframings.com</p>
+        <p class="hours">Mon - Sat: 9:00 AM - 8:00 PM IST<br>Sunday: 10:00 AM - 2:00 PM IST</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Janki Framings. All rights reserved. Handcrafted with devotion for retail and wholesale partners.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Wholesale Terms & Transport</a>
+          <a href="#">Damage-Free Delivery Guarantee</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

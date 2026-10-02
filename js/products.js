@@ -11,7 +11,9 @@ const CATEGORIES_DATA = [
     icon: '🪟',
     count: 20,
     photoUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=700&auto=format&fit=crop&q=80',
-    description: 'Complete range of Hindu God frames, grand wedding portraits, corporate degrees, and bulk materials.'
+    description: 'Complete range of Hindu God frames, grand wedding portraits, corporate degrees, and bulk materials.',
+    startingPrice: 195,
+    tag: 'Complete Catalog'
   },
   {
     id: 'hindu-gods',
@@ -20,7 +22,10 @@ const CATEGORIES_DATA = [
     count: 6,
     isPrimary: true,
     photoUrl: 'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=700&auto=format&fit=crop&q=80',
-    description: 'Shree Ram, Radha Krishna, Balaji, Shiva & Ganesha in 24K gold foil, 3D embossed acrylic & teak wood.'
+    description: 'Shree Ram, Radha Krishna, Balaji, Shiva & Ganesha in 24K gold foil, 3D embossed acrylic & teak wood.',
+    startingPrice: 780,
+    tag: 'Primary Specialty',
+    popularDeities: ['Shree Ram Darbar', 'Radha Krishna', 'Tirupati Balaji', 'Shiv Parivar', 'Lakshmi Ganesha', 'Hanuman Ji']
   },
   {
     id: 'wedding-marriage',
@@ -28,7 +33,10 @@ const CATEGORIES_DATA = [
     icon: '💍',
     count: 3,
     photoUrl: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&auto=format&fit=crop&q=80',
-    description: 'Royal wedding portraits, pre-wedding couple canvas floaters, vintage gold leaf and memory collages.'
+    description: 'Royal wedding portraits, pre-wedding couple canvas floaters, vintage gold leaf and memory collages.',
+    startingPrice: 980,
+    tag: 'Wedding Studios',
+    popularDeities: ['Bridal Canvases', 'Pre-Wedding Floaters', '9-in-1 Shaadi Collages']
   },
   {
     id: 'corporate-framing',
@@ -36,7 +44,10 @@ const CATEGORIES_DATA = [
     icon: '🏢',
     count: 3,
     photoUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=700&auto=format&fit=crop&q=80',
-    description: 'Degree certificates, executive boardroom art, employee appreciation awards and bulk office decor.'
+    description: 'Degree certificates, executive boardroom art, employee appreciation awards and bulk office decor.',
+    startingPrice: 195,
+    tag: 'Offices & Colleges',
+    popularDeities: ['A4 Degree Boxes', 'Boardroom Panoramas', 'Award Plaques']
   },
   {
     id: 'bulk-retail-cartons',
@@ -44,7 +55,10 @@ const CATEGORIES_DATA = [
     icon: '📦',
     count: 3,
     photoUrl: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&auto=format&fit=crop&q=80',
-    description: 'Master carton packs (12 to 50 pcs) for gift shops, temple souvenir stores and stationery retailers.'
+    description: 'Master carton packs (12 to 50 pcs) for gift shops, temple souvenir stores and stationery retailers.',
+    startingPrice: 60,
+    tag: 'High Reseller Margin',
+    popularDeities: ['8x10 Carton 24', '6x8 Deity Carton 40', 'Square Gallery Carton 12']
   },
   {
     id: 'family-personal',
@@ -52,7 +66,10 @@ const CATEGORIES_DATA = [
     icon: '👨‍👩‍👧',
     count: 2,
     photoUrl: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=700&auto=format&fit=crop&q=80',
-    description: 'Multi-aperture family trees, newborn milestone collages, and contemporary home gallery walls.'
+    description: 'Multi-aperture family trees, newborn milestone collages, and contemporary home gallery walls.',
+    startingPrice: 880,
+    tag: 'Personal Decor',
+    popularDeities: ['12-Month Baby Milestone', '7-Piece Teak Gallery Set']
   },
   {
     id: 'mouldings',
@@ -60,7 +77,10 @@ const CATEGORIES_DATA = [
     icon: '🪵',
     count: 2,
     photoUrl: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=700&auto=format&fit=crop&q=80',
-    description: 'PS synthetic gold moulding bars and seasoned teak wood lengths (bundles of 10 × 9.5 ft) for workshops.'
+    description: 'PS synthetic gold moulding bars and seasoned teak wood lengths (bundles of 10 × 9.5 ft) for workshops.',
+    startingPrice: 1350,
+    tag: 'Workshop Bundles',
+    popularDeities: ['Synthetic PS Gold', 'Seasoned Teakwood', 'Box Moulding']
   },
   {
     id: 'framing-materials',
@@ -68,7 +88,10 @@ const CATEGORIES_DATA = [
     icon: '🔩',
     count: 1,
     photoUrl: 'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=700&auto=format&fit=crop&q=80',
-    description: '2mm clear sheet glass, acid-free velvet mountboards, heavy-duty D-rings, wire and flexipoints.'
+    description: '2mm clear sheet glass, acid-free velvet mountboards, heavy-duty D-rings, wire and flexipoints.',
+    startingPrice: 480,
+    tag: 'Framing Supplies',
+    popularDeities: ['Flexipoints 5,000', 'Heavy D-Rings', 'Float Glass Crate']
   }
 ];
 
@@ -95,15 +118,22 @@ const PRODUCTS_DATA = [
     dimensions: '18" × 24" (Outer 22" × 28")',
     inStock: true,
     stockCount: 140,
-    photoUrl: 'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=700&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=700&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Sacred Tanjore style Shree Ram, Sita Mata, Lakshman Ji and Hanuman Ji. Hand-embossed 24K gold foil relief with Jaipur stone work, housed in a traditional carved antique gold mandir frame with 2mm float glass.',
     specs: {
       deity: 'Shree Ram Darbar',
       frameProfile: '55 mm Heavy Antique Floral Moulding',
       embossWork: '24K Micron Gold Foil with Sparkling Stonework',
       glazing: '2.0mm Clean Washed Sheet Glass',
-      backing: 'Moisture-resistant MDF with brass hanging hooks'
-    }
+      backing: 'Moisture-resistant MDF with brass hanging hooks',
+      origin: 'Handcrafted at Janki Framing Works'
+    },
+    availableSizes: ['12" × 16"', '18" × 24" (Standard)', '24" × 36" (Grand Mandir)']
   },
   {
     id: 'god-002',
@@ -125,7 +155,11 @@ const PRODUCTS_DATA = [
     dimensions: '16" × 20" (Pooja Room & Living Wall)',
     inStock: true,
     stockCount: 220,
-    photoUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=700&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Vibrant divine depiction of Shree Radha Krishna in Vrindavan. Featuring embossed acrylic texture that catches pooja diya lighting beautifully. Fitted in seasoned teakwood-tone synthetic frame.',
     specs: {
       deity: 'Radha Krishna',
@@ -133,7 +167,8 @@ const PRODUCTS_DATA = [
       glazing: 'Anti-Glare Clear Polycarbonate Sheet',
       illumination: 'Pre-wired for optional warm-white LED backlighting',
       usage: 'Ideal for Pooja Mandir, Living Room & Griha Pravesh Gift'
-    }
+    },
+    availableSizes: ['12" × 18"', '16" × 20" (Standard)', '20" × 30" (Large)']
   },
   {
     id: 'god-003',
@@ -155,7 +190,11 @@ const PRODUCTS_DATA = [
     dimensions: '20" × 30" (Grand Mandir Size)',
     inStock: true,
     stockCount: 85,
-    photoUrl: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=700&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Majestic Lord Venkateswara Swamy in full Alankaram with Shankha, Chakra and Namam. Backed on royal maroon velvet matting with a heavy 3-step temple stepped gold moulding.',
     specs: {
       deity: 'Lord Venkateswara Balaji',
@@ -163,7 +202,8 @@ const PRODUCTS_DATA = [
       matboard: 'Deep Crimson Royal Velvet Mount',
       glazing: '2.5 mm High Clarity Glass',
       weight: 'Approx 3.8 kg with reinforced iron D-rings'
-    }
+    },
+    availableSizes: ['16" × 24"', '20" × 30" (Grand)', '24" × 36" (Temple Hall)']
   },
   {
     id: 'god-004',
@@ -184,14 +224,18 @@ const PRODUCTS_DATA = [
     dimensions: '18" × 24" Portrait',
     inStock: true,
     stockCount: 110,
-    photoUrl: 'https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1544717305-2782549b5136?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1544717305-2782549b5136?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Complete Shiv Parivar on holy Mount Kailash with Nandi and Kartikeya. Muted divine artwork complemented by a dual charcoal-black outer frame with inner gold fillet liner.',
     specs: {
       deity: 'Shiv Parivar (Shiva, Parvati, Ganesha, Kartikeya)',
       frameProfile: '45 mm Dual-Tone Modern Mandir Frame',
       finishTone: 'Matte Charcoal with 8mm Gold Beaded Fillet',
       backing: 'Termite-treated hardboard'
-    }
+    },
+    availableSizes: ['12" × 18"', '18" × 24" (Standard)', '24" × 32"']
   },
   {
     id: 'god-005',
@@ -213,14 +257,18 @@ const PRODUCTS_DATA = [
     dimensions: '12" × 16" (Standard Home & Shop Mandir)',
     inStock: true,
     stockCount: 450,
-    photoUrl: 'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'High-volume favorite for Diwali pooja, new shop openings (Vastu/Muhurat), and corporate festive gifting. Features Goddess Lakshmi showering gold coins alongside Vighnaharta Ganesha.',
     specs: {
       deity: 'Lakshmi & Ganesha',
       frameProfile: '35 mm Golden Peacock Bead Moulding',
       glazing: '2.0mm High Transparency Glass',
       packaging: 'Individually boxed in auspicious festive red gift box'
-    }
+    },
+    availableSizes: ['8" × 12"', '12" × 16" (Standard)', '16" × 20"']
   },
   {
     id: 'god-006',
@@ -241,13 +289,17 @@ const PRODUCTS_DATA = [
     dimensions: '14" × 20" Wall Mount',
     inStock: true,
     stockCount: 95,
-    photoUrl: 'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Fierce and protective Panchamukhi Hanuman representation. High-definition gold-ink lithograph print in dark Sheesham wood-textured heavy moulding.',
     specs: {
       deity: 'Panchamukhi Hanuman',
       frameProfile: '42 mm Heavy Ribbed Profile',
       protection: 'UV-resistant protective coating on glass'
-    }
+    },
+    availableSizes: ['10" × 15"', '14" × 20" (Standard)', '18" × 24"']
   },
 
   // --- Category: Marriage & Couple Photos ---
@@ -271,14 +323,19 @@ const PRODUCTS_DATA = [
     dimensions: '24" × 36" (Grand Master Bedroom Size)',
     inStock: true,
     stockCount: 60,
-    photoUrl: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1519741497674-611481863552?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Designed exclusively for Indian wedding photography couples and professional bridal studios. Features double ivory French matting with gold bead liner inside a rich Victorian ornate golden border.',
     specs: {
       profileWidth: '70 mm (2.75 in) Luxury Gold Leaf Moulding',
       matOpening: '20" × 30" Cutout (4-ply Beveled Ivory Mat)',
       glazing: 'Optical grade anti-reflective glass',
       backing: 'Termite & moisture resistant wood back with heavy hanging brackets'
-    }
+    },
+    availableSizes: ['16" × 24"', '20" × 30"', '24" × 36" (Grand Wedding Size)']
   },
   {
     id: 'mrg-002',
@@ -299,13 +356,17 @@ const PRODUCTS_DATA = [
     dimensions: '20" × 30" (1.5" Canvas Depth)',
     inStock: true,
     stockCount: 80,
-    photoUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1519741497674-611481863552?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Sleek canvas floater that leaves a stylish 10mm shadow gap around your stretched canvas couple portrait. Trendy modern aesthetic loved by young couples.',
     specs: {
       profileDepth: '45 mm (1.75 in) deep rebate',
       compatibility: 'Fits stretched canvas wraps up to 1.5" thickness',
       origin: 'Solid pine core with warm walnut finish'
-    }
+    },
+    availableSizes: ['16" × 20"', '20" × 30" (Standard)', '24" × 36"']
   },
   {
     id: 'mrg-003',
@@ -327,13 +388,17 @@ const PRODUCTS_DATA = [
     dimensions: '18" × 24" Mat with 9 Photo Openings',
     inStock: true,
     stockCount: 130,
-    photoUrl: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Celebrate Haldi, Mehendi, Sangeet, Varmala and Reception in one frame. Precision computer-cut archival mount holds one 8×10 center photo and eight 4×6 candid shots.',
     specs: {
       apertures: '1 Center (8×10) + 8 Surrounding (4×6)',
       mountBoard: '100% Acid-free Pure White 4-Ply Board',
       glazing: '2.0mm Clean Sheet Glass'
-    }
+    },
+    availableSizes: ['16" × 20" (6 Photos)', '18" × 24" (9 Photos)', '20" × 30" (12 Photos)']
   },
 
   // --- Category: Corporate & Certificates ---
@@ -357,14 +422,18 @@ const PRODUCTS_DATA = [
     dimensions: 'A4 Size (210 × 297 mm) / 8.3" × 11.7"',
     inStock: true,
     stockCount: 1200,
-    photoUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Bulk favorite for universities, corporate awards ceremonies, doctor clinics, CA offices, and legal advocates. Matte black frame with inner 3mm gold foil border.',
     specs: {
       profileWidth: '22 mm with inner gold accent line',
       orientation: 'Dual portrait or landscape desktop easel + wall hooks',
       glass: 'Polished edge sheet glass',
       packaging: 'Individually shrink-wrapped with corner caps'
-    }
+    },
+    availableSizes: ['A4 Standard (8.3" × 11.7")', 'A3 Large (11.7" × 16.5")']
   },
   {
     id: 'crp-002',
@@ -385,13 +454,17 @@ const PRODUCTS_DATA = [
     dimensions: '24" × 48" Panorama (Ideal for Office Receptions)',
     inStock: true,
     stockCount: 40,
-    photoUrl: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Wide format executive presentation frame for corporate mission statements, skyline photography, architectural blueprints, and boardroom fine art.',
     specs: {
       profileWidth: '35 mm Flat Top Satin Black Timber',
       glazing: 'Shatterproof Lightweight Optical Acrylic',
       hanging: 'Heavy duty Z-cleat french bracket included'
-    }
+    },
+    availableSizes: ['18" × 36"', '24" × 48" (Executive Panorama)', '30" × 60"']
   },
   {
     id: 'crp-003',
@@ -412,12 +485,16 @@ const PRODUCTS_DATA = [
     dimensions: '10" × 12" Tabletop & Wall Plaque',
     inStock: true,
     stockCount: 340,
-    photoUrl: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Deep luster rosewood profile with velvet backing and brass accent corners. Accommodates metallic printed plates or certificate parchment.',
     specs: {
       profileWidth: '30 mm Chamfered Rosewood Look',
       easelBack: 'Heavy-duty velvet stand for executive desks'
-    }
+    },
+    availableSizes: ['8" × 10"', '10" × 12" (Standard)', '12" × 15"']
   },
 
   // --- Category: Retailer Bulk Frame Packs ---
@@ -441,14 +518,18 @@ const PRODUCTS_DATA = [
     dimensions: '8" × 10" (With 5" × 7" Removable Mat)',
     inStock: true,
     stockCount: 180,
-    photoUrl: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'The #1 fastest selling SKU for gift shops, photo studios, and regional retail outlets. Packed in heavy drop-test certified corrugated boxes with individual bubble sleeves and barcode stickers.',
     specs: {
       packQuantity: '24 Frames in 1 Master Shipping Box',
       glass: 'Washed sheet glass with polished edges',
       easel: 'Two-way velvet kickstand for table + wall hangers',
       profitMargin: 'Over 110% retail markup potential for shopkeepers'
-    }
+    },
+    availableSizes: ['Carton of 24 (8" × 10")']
   },
   {
     id: 'blk-002',
@@ -470,12 +551,16 @@ const PRODUCTS_DATA = [
     dimensions: '6" × 8" Table & Wall Pooja Frames',
     inStock: true,
     stockCount: 220,
-    photoUrl: 'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'High turnover small devotional photo frames for temple gift shops and religious bookstalls. Assortment includes Ram, Hanuman, Krishna, Lakshmi, Shiva and Sai Baba in glittering golden frames.',
     specs: {
       packQuantity: '40 Assorted Deity Frames',
       stand: 'Sturdy fold-out tabletop easel included'
-    }
+    },
+    availableSizes: ['Carton of 40 (6" × 8")']
   },
   {
     id: 'blk-003',
@@ -496,12 +581,16 @@ const PRODUCTS_DATA = [
     dimensions: '10" × 10" with 5" × 5" Square Opening Mat',
     inStock: true,
     stockCount: 90,
-    photoUrl: 'https://images.unsplash.com/photo-1544457070-4cd773b4d71e?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1544457070-4cd773b4d71e?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1544457070-4cd773b4d71e?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Contemporary Scandinavian white gallery frames for home decor boutiques and modern art galleries. Features bevel cut thick white matboard.',
     specs: {
       packQuantity: '12 Frames in protective master box',
       glazing: 'Clear sheet glass'
-    }
+    },
+    availableSizes: ['Carton of 12 (10" × 10")']
   },
 
   // --- Category: Family & Personal Collages ---
@@ -524,12 +613,16 @@ const PRODUCTS_DATA = [
     dimensions: '16" × 20" (12 Monthly Cutouts + 1 Large Center)',
     inStock: true,
     stockCount: 115,
-    photoUrl: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Cherish every month of your baby’s first year from newborn to first birthday. High-precision laser cut beveled mat with soft silver or gold frame trim.',
     specs: {
       openings: '12 circular/oval mini slots + 1 large central 5×7 slot',
       finishTone: 'Soft Pearl White with Gold Inlay'
-    }
+    },
+    availableSizes: ['16" × 20" (Standard 12 Months)']
   },
   {
     id: 'fam-002',
@@ -550,12 +643,16 @@ const PRODUCTS_DATA = [
     dimensions: 'Set of 7 (1× 12x16, 2× 8x10, 4× 5x7)',
     inStock: true,
     stockCount: 75,
-    photoUrl: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Transform your living room wall with a curated 7-piece matching frame set. Includes full-scale hanging template for easy nail alignment.',
     specs: {
       contents: '1 Large, 2 Medium, 4 Small Frames + Wall Hanging Paper Template',
       wood: 'Seasoned natural wood finish'
-    }
+    },
+    availableSizes: ['Set of 7 Frames (Covers 4×3 ft Wall Area)']
   },
 
   // --- Category: Mouldings & Raw Workshop Materials ---
@@ -579,13 +676,17 @@ const PRODUCTS_DATA = [
     dimensions: '9.5 Feet (2.9 Meters) Length Bars',
     inStock: true,
     stockCount: 350,
-    photoUrl: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'The framing industry standard for Hindu god frames, wedding portraits, and ornate art. High-density polystyrene moulding with anti-chip gold foil wrap. Cuts cleanly on mitre saws.',
     specs: {
       profileWidth: '50 mm (2.0 in) Width × 28 mm Depth',
       rebateDepth: '16 mm (0.63 in)',
       bundlePacking: '10 bars tied with corrugated corner protectors'
-    }
+    },
+    availableSizes: ['Bundle of 10 Bars (95 Linear Feet)']
   },
   {
     id: 'mld-002',
@@ -606,12 +707,16 @@ const PRODUCTS_DATA = [
     dimensions: '9.5 Feet Length Sticks (10 per bundle)',
     inStock: true,
     stockCount: 160,
-    photoUrl: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Contemporary deep box profile with rich natural teak wood grain texture. Perfect for canvas paintings, deep pooja frames, and corporate art.',
     specs: {
       profileWidth: '25 mm face × 38 mm depth',
       rebateDepth: '30 mm deep rebate'
-    }
+    },
+    availableSizes: ['Bundle of 10 Bars (95 Linear Feet)']
   },
   {
     id: 'mat-001',
@@ -633,12 +738,41 @@ const PRODUCTS_DATA = [
     dimensions: 'Standard 15mm Flexipoints + 2-Hole D-Rings',
     inStock: true,
     stockCount: 420,
-    photoUrl: 'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=600&auto=format&fit=crop&q=80',
+    photoUrl: 'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=700&auto=format&fit=crop&q=80',
+    galleryPhotos: [
+      'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=700&auto=format&fit=crop&q=80'
+    ],
     description: 'Essential workshop supplies for picture framers and shop craftsmen. High-tensile bendable black flexipoints compatible with manual and pneumatic guns, plus rustproof zinc-coated D-rings.',
     specs: {
       flexipointsCount: '5,000 tabs per box',
       dringsCount: '200 heavy-gauge steel D-rings with screws',
       compatibility: 'Fits Fletcher, Logan and domestic pneumatic framing tools'
-    }
+    },
+    availableSizes: ['Combo Pack (5,000 tabs + 200 rings)']
   }
 ];
+
+// Helper Functions
+function formatINR(val) {
+  return '₹' + Number(val || 0).toLocaleString('en-IN');
+}
+
+function getProductById(id) {
+  return PRODUCTS_DATA.find(p => p.id === id) || PRODUCTS_DATA[0];
+}
+
+function getCategoryById(id) {
+  return CATEGORIES_DATA.find(c => c.id === id) || CATEGORIES_DATA[0];
+}
+
+function getProductsByCategory(catId) {
+  if (!catId || catId === 'all') return PRODUCTS_DATA;
+  return PRODUCTS_DATA.filter(p => p.category === catId);
+}
+
+function getRelatedProducts(productId, limit = 4) {
+  const current = getProductById(productId);
+  return PRODUCTS_DATA
+    .filter(p => p.id !== productId && (p.category === current.category || p.isBestseller))
+    .slice(0, limit);
+}
